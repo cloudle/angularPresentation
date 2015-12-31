@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html lang="en" ng-app="application">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>Angular Demo!</title>
+    <link rel="stylesheet" href="bundle.css"/>
+  </head>
+
+  <body ng-controller="mainCtrl">
+    <h1>Angular Fast Introduction</h1>
+    <div class="nav">
+      <a ui-sref="home">Home</a>
+      <a ui-sref="about">About</a>
+    </div>
+
+    <div ui-view></div>
+
+    <script src="vendor.js"></script>
+    <script src="bundle.js"></script>
+  </body>
+</html>

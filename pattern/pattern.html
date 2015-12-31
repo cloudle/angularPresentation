@@ -1,0 +1,21 @@
+<body ng-init="users=['Tin', 'Trung', 'Khoa', 'Hien', 'Son', 'Tung']">
+
+<input type="text" ng-model="userFilter">
+
+<div ng-controller="mainCtrl">
+  <div ng-repeat="dev in devs | filter:userFilter">{{dev}}</div>
+</div>
+
+<div class="results">
+  <div class="title">Devs:</div>
+  <div class="dev-list">
+    <div ng-repeat="user in users | filter:userFilter">
+      {{user}}
+    </div>
+  </div>
+</div>
+
+<div ui-view></div>
+
+<script src="js/angular.js"></script>
+<script src="js/ui-router.js"></script>

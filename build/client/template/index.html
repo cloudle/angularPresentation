@@ -1,0 +1,18 @@
+<h1>Developers</h1>
+
+<div class="developer-list">
+  <div class="developer-item" ng-repeat="dev in devs">
+    <a ui-sref="dev({id: dev.id})">
+      <div class="avatar" ng-style="{'background-image': 'url('+dev.avatar+')'}"></div>
+      <div>
+        <span>Name:</span>
+        <span class="strong" ng-bind="dev.gplus_name || dev.username"></span>
+      </div>
+      <div>
+        <span>Email:</span>
+        <span class="strong" ng-bind="dev.email || dev.username"></span>
+      </div>
+
+    </a>
+  </div>
+</div>

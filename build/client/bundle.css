@@ -1,0 +1,42 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300,600,700,800,italic800,italic400,400");
+@import url("//fonts.googleapis.com/css?family=Roboto:100,300,400,700,900,500&subset=latin,vietnamese");
+body {
+  position: relative;
+  color: #333;
+  text-rendering: optimizeLegibility;
+  font-family: "Open Sans", sans-serif, Arial;
+  font-size: 14px;
+}
+input {
+  padding: 6px 12px;
+  outline: none;
+  border: solid 1px #ddd;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.results {
+  margin-top: 10px;
+}
+.results .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.results .dev-list {
+  color: #808080;
+  padding-left: 2px;
+}
+span.strong {
+  font-weight: bold;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+.developer-list .developer-item .avatar {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=sourcemaps/bundle.css.map */
